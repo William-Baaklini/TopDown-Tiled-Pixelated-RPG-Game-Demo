@@ -5,13 +5,13 @@ canvas.width = document.documentElement.clientWidth;
 canvas.height = document.documentElement.clientHeight;
 
 const collisionsMap = [];
-for (let i = 0; i < collisions.length; i += 70) {
-  collisionsMap.push(collisions.slice(i, 70 + i));
+for (let i = 0; i < collisions.length; i += 110) {
+  collisionsMap.push(collisions.slice(i, 110 + i));
 }
 
 const offset = {
-  x: -20 * 48 + canvas.width / 2 - 24,
-  y: -20 * 48 + canvas.height / 2,
+  x: -40 * 48 + canvas.width / 2 - 24,
+  y: -30 * 48 + canvas.height / 2,
 };
 
 const boundaries = [];
@@ -30,10 +30,10 @@ collisionsMap.forEach((row, i) => {
 });
 
 const bgImage = new Image();
-bgImage.src = "./assets/Pellet_Town.png";
+bgImage.src = "./assets/Pellet_Town2.png";
 
 const fgImage = new Image();
-fgImage.src = "./assets/Pellet_Town_ForeGround.png";
+fgImage.src = "./assets/Pellet_Town_ForeGround2.png";
 
 const playerImageDown = new Image();
 playerImageDown.src = "./assets/playerDown.png";
